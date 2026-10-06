@@ -11,6 +11,8 @@ export const BBox = z.object({
   y: z.number().min(0).max(1),
   w: z.number().gt(0).max(1),
   h: z.number().gt(0).max(1),
+  /** Proporção largura/altura da imagem inteira; o painel calcula junto com o bbox. */
+  aspect: z.number().positive().optional(),
 });
 export type BBox = z.infer<typeof BBox>;
 

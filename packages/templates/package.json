@@ -1,0 +1,41 @@
+{
+  "name": "@promo/templates",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/exports.ts",
+  "types": "./src/exports.ts",
+  "exports": {
+    ".": "./src/exports.ts",
+    "./entry": "./src/index.ts"
+  },
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:fixtures": "node scripts/render-fixtures.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src test",
+    "test": "vitest run",
+    "fonts:fetch": "node scripts/fetch-fonts.mjs"
+  },
+  "dependencies": {
+    "@promo/fixtures": "workspace:*",
+    "@promo/schema": "workspace:*",
+    "@promo/shared": "workspace:*",
+    "@remotion/fonts": "4.0.533",
+    "@remotion/layout-utils": "4.0.533",
+    "@remotion/noise": "4.0.533",
+    "@remotion/paths": "4.0.533",
+    "@remotion/shapes": "4.0.533",
+    "@remotion/transitions": "4.0.533",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "remotion": "4.0.533"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "4.0.533",
+    "@remotion/cli": "4.0.533",
+    "@remotion/google-fonts": "4.0.533",
+    "@remotion/renderer": "4.0.533",
+    "@types/react": "19.2.18"
+  }
+}
