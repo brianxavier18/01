@@ -1,0 +1,4 @@
+{
+  "Anton": { "module": "Anton", "weights": ["400"] },
+  "Inter": { "module": "Inter", "weights": ["500", "700", "800"] }
+}
